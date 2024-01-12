@@ -18,7 +18,7 @@ public class Test_analyse {
     private int min;
     private int max;
     @ManyToOne
-    private Test_analyse testAnalyse;
+    private Analyse analyse;
     @OneToOne
     private Resultat resultat;
 

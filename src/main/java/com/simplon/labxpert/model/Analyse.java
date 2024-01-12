@@ -25,7 +25,7 @@ public class Analyse {
     private User user;
     @OneToOne(mappedBy = "analyse")
     private Plannification plannification;
-    @OneToMany(mappedBy = "test", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "analyse", fetch = FetchType.LAZY)
     private Collection <Test_analyse> testAnalyse;
     @OneToMany(mappedBy ="analyse",fetch = FetchType.LAZY)
     private Collection<Reactif> reactif;
